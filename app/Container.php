@@ -20,3 +20,6 @@ $container['filesGateaway'] = function (){
 $container['UploadService'] = function (){
     return new Models\UploadService();
 };
+$container['DownloadService'] = function (){
+    return new Models\DownloadService();
+};

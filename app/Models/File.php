@@ -35,7 +35,7 @@ class File
         }
         $year = date('y');
         $month = date('m');
-        $this->link = "uploads\\$year\\$month\\$this->id$this->name";
+        $this->link = "$year\\$month\\$this->id$this->name";
         $this->type = $file->getClientMediaType();
         $this->size = $file->getSize();
         $this->authorComment = $comment;

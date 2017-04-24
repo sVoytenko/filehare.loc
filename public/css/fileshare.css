@@ -1,0 +1,23 @@
+.contentWrapper{
+    padding: 1%;
+}
+.form{
+    padding: 1%;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+    width: max-content;
+    position: absolute;
+    margin-left: 30%;
+}
+.files{
+    border-bottom: 1px solid #e7e7e7;
+    margin-top: 1%;
+}
+.coment{
+    background-color: #f8f8f8;
+    padding: 1%;
+    border-radius: 5px;
+    width: max-content;
+}

@@ -50,5 +50,12 @@ class Util
             return 'name';
         }
     }
+    public static function checkEncoding($str)
+    {
+        if (PHP_OS == 'WINNT') {
+            $str = iconv('utf-8', 'windows-1251', $str);
+        }
+        return $str;
+    }
 
 }

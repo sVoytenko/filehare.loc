@@ -1,4 +1,5 @@
 {{ include("header.php") }}
+<div class="contentWrapper">
     {%if file.type == 'image/jpeg' %}
     <img src="/previews/{{file.realName}}">
     {%endif%}
@@ -9,4 +10,10 @@
     <p>Авторский комментарий</p>
     <p>{{file.authorComment}}</p>
     <hr>
+    <form name="comment" action="/file/{{file.id}}" method="post" accept-charset="utf-8">
+        <input class="" type="text" name="text">
+     <input type="submit">
+    </form>
+    
+</div>
 {{ include("footer.php") }}

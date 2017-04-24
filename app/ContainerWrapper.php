@@ -32,4 +32,12 @@ class ContainerWrapper extends \Slim\Container
     {
         return $this->get('UploadService');
     }
+    
+     /**
+     * @return Models\DownloadService|null
+     **/
+    public function getDownloadService()
+    {
+        return $this->get('DownloadService');
+    }
 }
